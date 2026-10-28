@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Countdown</title>
+</head>
+<body>
+    <h1>Exam Countdown</h1>
+    <input id="subjectInput" type="text" placeholder="Subject">
+    <input id="dateInput" type="date">
+    <input id="topicsInput" type="number" placeholder="Topics">
+    <button onclick="addExam()">Add Exam</button>
+
+    <div id="examList"></div>
+
+    <script>
+        function addExam() {
+          let subject = document.getElementById("subjectInput").value;
+          let date = documnent.getElementById("topicInput").value;
+          let topics = document.getElementById("topicsInput").value;
+
+      document.getElementById("examList").innerHTML +=
+        "<p>" + subject + " exam on " + date + " with " + topics + " topics</p>";
+    }
+  </script>
+</body>
+</html>
+        
+
+    
